@@ -887,9 +887,6 @@ class FillSVG extends helper_1.default {
             .attr("class", object.className + "Group")
             .attr("transform", (d) => {
             var transform = "translate(" + this.rectX(d) + ",0)";
-            if (d.direction === "left") {
-                transform += " scale(-1, 1)";
-            }
             ;
             return transform;
         });
